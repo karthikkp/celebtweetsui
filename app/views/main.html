@@ -1,14 +1,37 @@
-<div>
+<div ng-repeat="tweet in tweets">
   <!-- *** avatar, name, screen name *** -->
-  <div>
+  <div class="pure-g">
+    <div class="pure-u-2-24">
+      <img class="pure-img" src="{{tweet.tweet.user.profile_image_url_https}}"/>
+    </div>
+    <div class="pure-u-22-24">
+      <h1>{{tweet.screenName}}</h1>
+      
+    </div>
+  </div>
+  <!-- *** name ** -->
+  <div class="pure-g">
+    <div class="pure-u-2-24">
+    </div>
+    <div class="pure-u-22-24">
+    <p>{{tweet.tweet.user.name}}</p>
+    </div>
   </div>
   <!-- *** tweet *** -->
   <div>
+    <p>{{tweet.tweet.text}}</p>
   </div>
   <!-- *** time stamp *** -->
   <div>
+    <p>{{tweet.tweet.created_at}}</p>
   </div>
   <!-- *** twitter buttons *** -->
   <div>
+    <div class="">
+    </div>
+    <div class="">
+    </div>
+    <div class="">
+    </div>
   </div>
 </div>
