@@ -1,0 +1,45 @@
+<div>
+	<div class="pure-g">
+	<!-- ********** Actress ********* -->
+	<div class="pure-u-sm-1 pure-u-lg-1-2">
+		<div class="celebs">
+		<div ng-repeat="actress in actressess">
+			{{actress.name}}
+		</div>
+	</div>
+	</div>
+	<!-- ********** Actors **********-->
+	<div class="pure-u-sm-1 pure-u-lg-1-2">
+		<div class="celebs"> <!-- div inside pure-u can be done with padding.
+		So have to change the tweets view -->
+		<div ng-repeat="actor in actors">
+			{{actor.name}}
+		</div>
+		</div>
+	</div>
+</div>
+<div class="pure-g">
+	<!-- *********** Directors ********-->
+	<div class="pure-u-sm-1 pure-u-lg-1-2">
+		<div class="celebs">
+		<div ng-repeat="director in directors">
+			{{director.name}}
+		</div>
+	</div>
+	</div>
+	<!-- *********** Music Directors ********* -->
+	<div class="pure-u-sm-1 pure-u-lg-1-2">
+		<div class="celebs">
+		<div ng-repeat="musicdirector in musicDirectors">
+			{{musicdirector.name}}
+		</div>
+	</div>
+	</div>
+</div>
+	<!-- *********** Others *********** -->
+	<div class="pure-u-sm-1 pure-u-lg-1">
+		<div ng-repeat="other in otheres">
+			{{other.name}}
+		</div>
+	</div>
+</div>
