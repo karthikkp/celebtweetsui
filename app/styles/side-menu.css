@@ -98,9 +98,9 @@ appears on the left side of the page.
     All anchors inside the menu should be styled like this.
     */
     #menu a {
-        color: #999;
-        border: none;
-        padding: 0.6em 0 0.6em 0.6em;
+        color: #999 !important;/* added by me */
+        border: none !important;/* added by me */
+        padding: 0.6em 0 0.6em 0.6em !important;/* added by me */
     }
 
     /*
@@ -108,8 +108,8 @@ appears on the left side of the page.
     */
      #menu .pure-menu,
      #menu .pure-menu ul {
-        border: none;
-        background: transparent;
+        border: none !important;/* added by me */
+        background: transparent !important;/* added by me */
     }
 
     /*
@@ -117,14 +117,14 @@ appears on the left side of the page.
     */
     #menu .pure-menu ul,
     #menu .pure-menu .menu-item-divided {
-        border-top: 1px solid #333;
+        border-top: 1px solid #333 !important;/* added by me */
     }
         /*
         Change color of the anchor links on hover/focus.
         */
         #menu .pure-menu li a:hover,
         #menu .pure-menu li a:focus {
-            background: #333;
+            background: #333 !important;/* added by me */
         }
 
     /*
@@ -132,22 +132,22 @@ appears on the left side of the page.
     */
     #menu .pure-menu-selected,
     #menu .pure-menu-heading {
-        background: #1f8dd6;
+        background: #1f8dd6 !important;/* added by me */
     }
         /*
         This styles a link within a selected menu item `<li>`.
         */
         #menu .pure-menu-selected a {
-            color: #fff;
+            color: #fff !important;/* added by me */
         }
 
     /*
     This styles the menu heading.
     */
     #menu .pure-menu-heading {
-        font-size: 110%;
-        color: #fff;
-        margin: 0;
+        font-size: 110% !important;/* added by me */
+        color: #fff !important;/* added by me */
+        margin: 0 !important;/* added by me */
     }
 
 /* -- Dynamic Button For Responsive Menu -------------------------------------*/

@@ -9,12 +9,12 @@
       <img class="pure-img avatar" src="{{tweet.tweet.user.profile_image_url_https}}"/>
     </div>
     <div class="pure-u-15-24">
-      <h3 class="screenName">{{tweet.tweet.user.name}}</h3>
-      <h4 class="name">@{{tweet.screenName}}</h4>
+      <h4 class="screenName">{{tweet.tweet.user.name}}</h3>
+      <h5 class="name">@{{tweet.screenName}}</h4>
     </div>
     <!-- *** time stamp *** -->
     <div class="pure-u-6-24">
-      <h4>{{tweet.tweet.created_at}}</h4>
+      <h6>{{tweet.tweet.created_at}}</h4>
     </div>
   </div>
   <!-- *** tweet *** -->
@@ -31,11 +31,11 @@
       <!-- For space on the left -->
     </div>
     <div class="pure-u-4-24">
-      <h4 class="7-margin-top"><em>{{tweet.tweet.retweet_count}}</em> Retweets</h4>
+      <h5 class="7-margin-top"><em>{{tweet.tweet.retweet_count}}</em> Retweets</h4>
     </div>
 
     <div class="pure-u-4-24">
-      <h4 class="7-margin-top"><strong>{{tweet.tweet.favorite_count}}</strong> Favorites</h4>
+      <h5 class="7-margin-top"><strong>{{tweet.tweet.favorite_count}}</strong> Favorites</h4>
     </div>
   </div>
   
