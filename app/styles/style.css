@@ -1,3 +1,13 @@
+/*  ************* PADDING FOR GRIDS IN TWEETS CONTAINER ************/
+.padding-grids{
+	padding:0.5rem;
+}
+@media screen and (max-width: 480px) {
+	.padding-grids{
+		padding:4px;
+	}
+}
+
 /* *********** Tweets container ****************/
 .tweets{
 	border: solid 1px #F9F5F5;
@@ -21,10 +31,7 @@ background: #ffffff;
 }
 .avatar{
 	margin-left: auto;
-	margin-right: auto;
-	margin-top: 1rem;
-	margin-left: -10%;
-	
+	margin-right: auto;		
 }
 /*.wraptocenter {
     display: table-cell;
@@ -53,7 +60,17 @@ background: #ffffff;
 }
 .screenName{
 	color:#292f33;
+	margin: 0 0 0 0 !important;
 
+
+}
+/******* Line height for small screens *************/
+@media screen and (max-width: 480px) {
+	.screenName{
+		color:#292f33;
+	margin: 0 0 0 0 !important;
+	line-height: 10px !important;
+	}
 }
 .twitterButtons{
 	text-align: center !important;
@@ -63,6 +80,7 @@ background: #ffffff;
 	margin-top: 10px;
 	border: solid 1px #F9F5F5;
 }
+.
 .7-margin-top{
 	margin-top: 0.7rem !important;
 }
@@ -70,4 +88,8 @@ background: #ffffff;
 	background: #1f8dd6 !important;
 /*background-image: url("zenbg.png") !important;*/
 z-index: -1 !important;
+}
+.auto-link{
+	color:#1F8DD6;
+	font-weight: 900;
 }
