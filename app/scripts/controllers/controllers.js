@@ -11,6 +11,9 @@ angular.module('celebtweetsuiApp')
 			error(function (data, status, cofig, headers){
 				//alert("Error");
 			});
+		$scope.html = function(h){
+			return h;
+		}
 	})
 	.controller('CelebsCtrl', function ($scope, $http){
 		$scope.celebs = [];
@@ -31,5 +34,7 @@ angular.module('celebtweetsuiApp')
 			error(function (data, status, config, headers){
 
 			});
+
+
 		
 	});
