@@ -57,11 +57,11 @@ background: #ffffff;
 	margin-top: 0 !important;
 	line-height: 1rem !important;
 	color:#8899a6;
+	font-weight: 200 !important;
 }
 .screenName{
 	color:#292f33;
 	margin: 0 0 0 0 !important;
-
 
 }
 /******* Line height for small screens *************/
@@ -91,5 +91,16 @@ z-index: -1 !important;
 }
 .auto-link{
 	color:#1F8DD6;
-	font-weight: 900;
+	font-weight: 600;
+	text-decoration: none;
+}
+.auto-link:hover{
+	text-decoration: underline;
+}
+
+.media{
+	max-width: 40% !important;
+	max-height: 40% !important;
+	margin-left: auto;
+	margin-right: auto;
 }

@@ -77,3 +77,6 @@ body {
     border-bottom: 0;
   }
 }
+.tweets:hover{
+  border: black 2px solid;
+};

@@ -4,7 +4,7 @@
 	<div class="pure-u-24-24 pure-u-lg-1-2">
 		<div class="celebs">
 		<div ng-repeat="actress in actressess">
-			<h4>{{actress.name}}</h4>
+			<a href="#/celebs/{{actress.screenName}}"><h4>{{actress.name}}</h4></a>
 		</div>
 	</div>
 	</div>
@@ -12,7 +12,7 @@
 	<div class=" pure-u-24-24 pure-u-lg-1-2">
 		<div class="celebs"> 
 		<div ng-repeat="actor in actors">
-			<h4>{{actor.name}}</h4>
+			<a href="#/celebs/{{actor.screenName}}"><h4>{{actor.name}}</h4></a>
 		</div>
 		</div>
 	</div>
@@ -22,7 +22,7 @@
 	<div class="pure-u-24-24 pure-u-lg-1-2">
 		<div class="celebs">
 		<div ng-repeat="director in directors">
-			<h4>{{director.name}}</h4>
+<a href="#/celebs/{{director.screenName}}"><h4>{{director.name}}</h4></a>
 		</div>
 	</div>
 	</div>
@@ -30,7 +30,7 @@
 	<div class="pure-u-24-24 pure-u-lg-1-2">
 		<div class="celebs">
 		<div ng-repeat="musicdirector in musicDirectors">
-			<h4>{{musicdirector.name}}</h4>
+			<a href="#/celebs/{{musicdirector.screenName}}"><h4>{{musicdirector.name}}</h4></a>
 		</div>
 	</div>
 	</div>
@@ -38,7 +38,7 @@
 	<!-- *********** Others *********** -->
 	<div class="pure-u-24-24 pure-u-lg-1">
 		<div ng-repeat="other in otheres">
-			<h4>{{other.name}}
+			<a href="#/celebs/{{other.screenName}}"><h4>{{other.name}}</h4></a>
 		</div>
 	</div>
 </div>

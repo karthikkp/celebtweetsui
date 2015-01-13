@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'socialLinks'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -30,6 +31,14 @@ angular
       .when('/celebs', {
         templateUrl: 'views/celebs.html',
         controller: 'CelebsCtrl'
+      })
+      .when('/celebs/:name', {
+        templateUrl: 'views/main.html',
+        controller: 'CelebTweetsCtrl'
+      })
+      .when('/celebs/:name/tweets/:id', {
+        templateUrl: 'views/tweet.html',
+        controller: 'TweetCtrl'
       })
       .otherwise({
         redirectTo: '/'
