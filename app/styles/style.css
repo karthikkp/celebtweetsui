@@ -104,3 +104,13 @@ z-index: -1 !important;
 	margin-left: auto;
 	margin-right: auto;
 }
+/* to unstyle the anchor default styling that is applied to the entire tweet box */
+.nil{
+	font: inherit !important;
+	font-family: inherit !important;
+	color: inherit !important;
+	text-decoration: none;
+}
+.loadMore{
+	margin: 2% 40%;
+}

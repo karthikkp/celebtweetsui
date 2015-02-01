@@ -7,22 +7,34 @@
 
     <title>Side Menu &ndash; Layout Examples &ndash; Pure</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+
+    <!-- I added build:css so that grunt build adds it in dist folder. there is one more main.css in dist forder which containes all these below css files concatenated and minified. I left it as it is -->
+
+    <!-- build:css styles/grid.css -->
+    <link rel="stylesheet" href="styles/grid.css">
+    <!-- endbuild -->
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
         <![endif]-->
         <!--[if gt IE 8]><!-->
+        <!-- build:css styles/side-menu.css -->
     <link rel="stylesheet" href="styles/side-menu.css">
+    <!-- endbuild -->
         <!--<![endif]-->
         <!-- purecss GRID -->
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
-    <link rel="stylesheet" href="styles/grid.css">
     <!-- ***** Custom Style -->
+    <!-- build:css styles/style.css -->
     <link rel="stylesheet" href="styles/style.css">
+    <!-- endbuild -->
     <!-- FONTS -->
+    <!-- build:css styles/fonts.css -->
     <link rel="stylesheet" href="styles/fonts.css">
+    <!-- endbuild -->
     <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <!-- *** ICONS *** -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
     <body ng-app="celebtweetsuiApp" class="bgtex">
@@ -40,11 +52,7 @@
 
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#/about">About</a></li>
-
-                        <li>
-                            <a href="#">Services</a>
-                        </li>
+                        <li><a href="#/tweets">About</a></li>
 
                         <li><a href="#/celebs">Celebrities</a></li>
                     </ul>

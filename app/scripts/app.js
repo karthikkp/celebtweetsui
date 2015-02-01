@@ -36,7 +36,7 @@ angular
         templateUrl: 'views/main.html',
         controller: 'CelebTweetsCtrl'
       })
-      .when('/celebs/:name/tweets/:id', {
+      .when('/:name/:id', {
         templateUrl: 'views/tweet.html',
         controller: 'TweetCtrl'
       })
